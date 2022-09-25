@@ -30,7 +30,7 @@ class GameSprite(sprite.Sprite):
 
 class Player(GameSprite):
     def __init__(self):
-        super().__init__("hero.png", 200, 200, 75, 75)
+        super().__init__("hero.png", 100, 100, 75, 75)
         self.speed = 5
         self.hp = 100
 
@@ -90,9 +90,10 @@ treasure = Treasure()
 
 wall1 = Wall(50, 50, 20, 500)
 wall2 = Wall(70, 50, 770, 20)
-wall3 = Wall(300, 70, 20, 150)
+wall3 = Wall(200, 70, 20, 150)
 wall4 = Wall(840, 50, 20, 500)
-walls = [wall1, wall2, wall3, wall4]
+wall5 = Wall(200, 220, 200, 20)
+walls = [wall1, wall2, wall3, wall4, wall5]
 
 
 mixer.music.load("jungles.ogg")
